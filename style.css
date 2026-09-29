@@ -264,6 +264,57 @@ section:not(.hero) {
   color: #a89c88;
   font-size: 14px;
 }
+
+/* Orange Cash - التحويل اليدوي */
+.manual-payment {
+  margin-top: 15px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.manual-title {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.wallet-number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  direction: ltr;
+}
+
+.wallet-number span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.wallet-number button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.wallet-number button:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.wallet-number button i {
+  font-size: 13px;
+}
 /* ==================== Google Review ==================== */
 .review-card {
   background: linear-gradient(150deg, #182430, #10161c);

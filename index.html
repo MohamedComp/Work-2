@@ -89,30 +89,50 @@
 
     
         <!-- Vodafone Cash -->
-         <div class="payment-card">
-          <div class="payment-top">
-            <div class="payment-info">
-              <a 
-                href="tel:*9*7*01212391124*200%23"
-                class="app-icon vodafone"
-                aria-label="فتح Vodafone cash"
-              >
-                
-                <img src="images/image4.jpeg" alt="Orange Cash">
-              </a>
-
-              <div class="pay-name">
-                Orange Cash
-                <small>اورانج كاش</small>
-              </div>
-
-              </div>
-              <span class="tag"></span>
-              </div>
-
-              <p class="hint">
-                    اضغط على شعار Orange Cash لفتح التطبيق
+         <div class="payment-card"> 
+          <div class="payment-top"> 
+            <div class="payment-info"> 
+              <a  
+                href="tel:*9*7*01212391124*200%23" 
+                class="app-icon vodafone" 
+                aria-label="فتح Vodafone cash" 
+              > 
+                 
+                <img src="images/image4.jpeg" alt="Orange Cash"> 
+              </a> 
+ 
+              <div class="pay-name"> 
+                Orange Cash 
+                <small>اورانج كاش</small> 
+              </div> 
+ 
+              </div> 
+              <span class="tag"></span> 
+              </div> 
+ 
+              <p class="hint"> 
+                    اضغط على شعار Orange Cash لفتح التطبيق 
               </p>
+
+              <!-- خيار التحويل اليدوي -->
+              <div class="manual-payment">
+                <div class="manual-title">
+                  أو انسخ رقم المحفظة وحوّل عبر محفظة أورانج
+                </div>
+
+                <div class="wallet-number">
+                  <span id="orangeNumber">01212391124</span>
+
+                  <button 
+                    type="button" 
+                    onclick="copyOrangeNumber()"
+                    aria-label="نسخ رقم محفظة أورانج"
+                  >
+                    <i class="fa-regular fa-copy"></i>
+                    نسخ
+                  </button>
+                </div>
+              </div>
 
          </div>
           
@@ -120,12 +140,14 @@
     </div>
   </section>
 
+ 
+
 
   <!-- Google Review -->
   <section id="review">
     <div class="container">
       <div class="section-title">
-        <h2>قيّمنا على جوجل</h2>
+        <h2>مكانا على جوجل</h2>
       </div>
 
       <div class="review-card">
@@ -134,7 +156,11 @@
           <div class="review-text">
             <h3> المكان   </h3>
            
-            <div class="review-stars"> مقابل فاروق للمجوهرات </div>
+            <div class="review-stars"> مقابل فاروق للمجوهرات </div> <br>
+
+        <a class="review-btn" href="https://maps.app.goo.gl/LQ5CTPUxwZXHoCA47" target="_blank" rel="noopener>
+          <i class="fa-brands fa-google"></i> Loctaion
+        </a>
           </div>
         </div>
       </div>
@@ -277,6 +303,23 @@
   <a class="floating-whatsapp" href="https://wa.me/201021021449" target="_blank">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
+
+   <script>
+function copyOrangeNumber() {
+  const number = "01212391124";
+
+  navigator.clipboard.writeText(number).then(() => {
+    const button = event.currentTarget;
+    const oldText = button.innerHTML;
+
+    button.innerHTML = '<i class="fa-solid fa-check"></i> تم النسخ';
+
+    setTimeout(() => {
+      button.innerHTML = oldText;
+    }, 1500);
+  });
+}
+</script>
 </body>
 </html>
 
