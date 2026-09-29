@@ -419,7 +419,7 @@ section:not(.hero) {
   flex-shrink: 0;
   width: 120px;
   height: 120px;
-  background: #ffffff; /* خلفية بيضاء لتبرز تفاصيل الشعار الأسود */
+  background: #dcd3b8; /* خلفية بيضاء لتبرز تفاصيل الشعار الأسود */
   border-radius: 12px;
   display: flex;
   align-items: center;
